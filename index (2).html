@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>W&E Rentals</title>
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      background: linear-gradient(to bottom right, #ffffff, #f2f2f2);
+      color: #2c2c2c;
+    }
+
+    header {
+      background-color: #9caf88;
+      color: #f3f5ef;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #c8d1b3;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #758d6c;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .inventory {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .item {
+      border: 1px solid #9caf88;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #eef1e6;
+      text-align: center;
+    }
+
+    .item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #9caf88;
+      color: #fff8dc;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #9caf88;
+      border-radius: 4px;
+    }
+
+    form button {
+      background-color: #d4af37;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>W&E Rentals</h1>
+    <p>Reliable Chair & Table Rentals for Your Events</p>
+  </header>
+
+  <nav>
+    <a href="#inventory">Inventory</a>
+    <a href="#booking">Booking</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="inventory">
+      <h2>Inventory</h2>
+      <div class="inventory">
+        <div class="item">
+          <img src="https://i.imgur.com/6KjG9Fg.jpg" alt="Folding Chair">
+          <h3>Folding Chair</h3>
+          <p>$2 per day</p>
+        </div>
+        <div class="item">
+          <img src="https://i.imgur.com/L8zdO6h.jpg" alt="Banquet Table">
+          <h3>Banquet Table</h3>
+          <p>$10 per day</p>
+        </div>
+        <div class="item">
+          <img src="https://i.imgur.com/MWcQ7oh.jpg" alt="Round Table">
+          <h3>Round Table</h3>
+          <p>$12 per day</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking">
+      <h2>Book a Rental</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Phone Number" required />
+        <textarea placeholder="What items and how many?" required></textarea>
+        <input type="date" required />
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>W&E Rentals is your trusted partner for reliable, affordable chair and table rentals. Whether you're planning a wedding, party, or corporate event, we’ve got you covered!</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: werentals28@gmail.com</p>
+      <p>Phone: 914-984-8402 </p>
+      <p>Location: Rockaway, New Jersey 07866</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 W&E Rentals. All rights reserved.</p>
+  </footer>
+</body>
+</html>
